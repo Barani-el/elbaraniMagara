@@ -12,6 +12,7 @@ public class InputHandler : MonoBehaviour
         playerInput.Player.Enable();
 
         playerInput.Player.Jump.performed += Jump;
+        playerInput.Player.Attack.performed += Attack;  
     }
     public Vector2 GetMovementVector()
     {
@@ -25,6 +26,14 @@ public class InputHandler : MonoBehaviour
         {
 
             PlayerController.instance.HandleJump();
+        }
+    }
+
+    void Attack(InputAction.CallbackContext context)
+    {
+        if (context.ReadValueAsButton())
+        {
+            PlayerController.instance.Attack();
         }
     }
 }

@@ -495,6 +495,10 @@ MonoBehaviour:
   speed: 5
   jumpPower: 8
   attackDamage: 5
+  attackIndex: 0
+  mintimer: 0.22
+  maxtimer: 0.45
+  time: 0
   isGrounded: 1
   groundCheck: {fileID: 6824623}
   groundLayer:
@@ -558,7 +562,7 @@ Animator:
   m_GameObject: {fileID: 1731923242}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a51a4d7842cb7f84ea0f07aaaed711f7, type: 2}
+  m_Controller: {fileID: 9100000, guid: bb0ffedbe3c483940acbe3267b32aab6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
