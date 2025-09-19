@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float attackDamage;
 
     [Header("Jump Variables")]
-    bool isGrounded;
+    public bool isGrounded;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
     public bool isDoubleObtained;
@@ -76,11 +76,11 @@ public class PlayerController : MonoBehaviour
     {
         if (inputHandler.GetMovementVector().x < 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
 
     }

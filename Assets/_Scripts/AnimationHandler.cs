@@ -21,6 +21,6 @@ public class AnimationHandler : MonoBehaviour
 
     public void HandleAnim()
     {
-        animator.SetBool("isGrounded",PlayerController.instance.isGrounded);
+        animator.SetBool("isGrounded", PlayerController.instance.isGrounded);
     }
 }
