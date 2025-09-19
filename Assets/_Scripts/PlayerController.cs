@@ -12,12 +12,12 @@ public class PlayerController : MonoBehaviour
     InputSystem_Actions characterInput;
     InputHandler inputHandler;
     Animator animator;
-    [Header("Movement Staff")]
+    [Header("Movement Stuff")]
     [SerializeField] float speed;
     [SerializeField] float jumpPower;
     [SerializeField] float attackDamage;
     bool isFacingRight = true;
-    [Header("Attack Staff")]
+    [Header("Attack Stuff")]
     bool isAttacking;
     [SerializeField] int attackIndex = 0;
     [SerializeField] float mintimer,maxtimer;
@@ -30,6 +30,10 @@ public class PlayerController : MonoBehaviour
     public bool isDoubleObtained;
     bool isDoubleJumping;
     [SerializeField] bool isJumpable;
+    [Header("Dash Stuff")]
+    bool canDash = true;
+    [SerializeField] float dashCooldown;
+    [SerializeField] float dashPower;
     private void Awake()
     {
         if (instance == null)
@@ -58,17 +62,17 @@ public class PlayerController : MonoBehaviour
         time = Mathf.Clamp(time, 0, maxtimer+0.01f);
         if (time > maxtimer)
         {
-            Debug.Log("timer is out of range");
+            
             attackIndex = 0;
             EndAttack();
         }
     }
     public void Attack()
     {
-        Debug.Log("Attack!");
-        if (isGrounded) // Sadece yerdeyken combo sistemi çalýþsýn
+     
+        if (isGrounded) 
         {
-            //Baran
+            
             if (time >= mintimer  && attackIndex == 0)
             {
                 
@@ -105,20 +109,48 @@ public class PlayerController : MonoBehaviour
         Vector2 input = inputHandler.GetMovementVector();
         rb.linearVelocity = new Vector2(input.x * speed, rb.linearVelocity.y);
     }
+    public void Dash()
+    {
+        if (!canDash) return;
+
+        Debug.Log("DASH ALTERNATIVE!");
+
+        float dir = transform.localScale.x;
+        Vector2 dashForce = new Vector2(dir * dashPower * 100f, 0f); // Force için daha büyük deðer gerekir
+
+        rb.linearVelocity = Vector2.zero; // Önce durdur
+        rb.AddForce(dashForce, ForceMode2D.Impulse);
+
+        Debug.Log($"AddForce ile dash: {dashForce}");
+
+        canDash = false;
+        Invoke(nameof(ResetDash), dashCooldown);
+    }
+
+    void ResetDash()
+    {
+        Debug.Log("=== RESET DASH ÇAÐRILDI ===");
+        Debug.Log($"canDash deðiþmeden önce: {canDash}");
+
+        canDash = true;
+
+        Debug.Log($"canDash deðiþtikten sonra: {canDash}");
+        Debug.Log("Dash tekrar kullanýlabilir!");
+    }
 
 
     public void HandleJump()
     {
         if (isGrounded)
         {
-            //animator.SetInteger("airState", 1);
+         
             rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             isDoubleJumping = false;
         }
         else if (isDoubleObtained && isJumpable )
         {
-           // animator.SetInteger("airState", 2);
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // daha kontrollü
+           
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
             rb.AddForce(Vector2.up * jumpPower * 4/5f, ForceMode2D.Impulse);
             isJumpable = false;
             isDoubleJumping = true;

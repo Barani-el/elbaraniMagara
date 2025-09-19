@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a128fce0c74fc47aff3511c0a47e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 12
   jumpPower: 8
   attackDamage: 5
   attackIndex: 0
@@ -506,6 +506,8 @@ MonoBehaviour:
     m_Bits: 64
   isDoubleObtained: 1
   isJumpable: 0
+  dashCooldown: 0.5
+  dashPower: 15
 --- !u!61 &1731923246
 BoxCollider2D:
   m_ObjectHideFlags: 0

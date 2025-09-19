@@ -12,7 +12,8 @@ public class InputHandler : MonoBehaviour
         playerInput.Player.Enable();
 
         playerInput.Player.Jump.performed += Jump;
-        playerInput.Player.Attack.performed += Attack;  
+        playerInput.Player.Attack.performed += Attack; 
+        playerInput.Player.Dash.performed += Dash;
     }
     public Vector2 GetMovementVector()
     {
@@ -34,6 +35,15 @@ public class InputHandler : MonoBehaviour
         if (context.ReadValueAsButton())
         {
             PlayerController.instance.Attack();
+        }
+    }
+
+    void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            PlayerController.instance.Dash();
+
         }
     }
 }
