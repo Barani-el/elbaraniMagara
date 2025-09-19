@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
                 isAttacking = true;
                 animator.SetBool("isAttackEnd", !isAttacking);
                 animator.SetInteger("groundState", 3);
-                attackIndex = 2;
+                attackIndex = 0;
                 time = 0;
             }
         }
