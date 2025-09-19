@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Health : MonoBehaviour
+public class PlayerHealthSystem : MonoBehaviour
 {
     [Min(1)] public int MaxHealth = 3;
     public int CurrentHealth { get; private set; }
 
-    public UnityEvent<int, int> OnHealthChanged;   // (current, max)
-    public UnityEvent<int> OnMaxHealthChanged;    // (max)
-    public UnityEvent OnDeath;
+    [HideInInspector] public UnityEvent<int, int> OnHealthChanged;   // (current, max)
+    [HideInInspector] public UnityEvent<int> OnMaxHealthChanged;    // (max)
+    [HideInInspector] public UnityEvent OnDeath;
 
     bool IsDead => CurrentHealth <= 0;
 

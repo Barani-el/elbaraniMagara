@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class AnimationHandler : MonoBehaviour
 {
-    Animator animator;
+
+    public Animator animator;
 
     private void Awake()
     {
@@ -22,5 +23,6 @@ public class AnimationHandler : MonoBehaviour
     public void HandleAnim()
     {
         animator.SetBool("isGrounded", PlayerController.instance.isGrounded);
+        animator.SetInteger("groundState", 1);
     }
 }

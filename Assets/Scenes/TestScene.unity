@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 1731923250}
   - component: {fileID: 1731923245}
   - component: {fileID: 1731923244}
+  - component: {fileID: 1731923251}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -492,6 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a128fce0c74fc47aff3511c0a47e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   speed: 12
   jumpPower: 8
   attackDamage: 5
@@ -507,7 +509,8 @@ MonoBehaviour:
   isDoubleObtained: 1
   isJumpable: 0
   dashCooldown: 0.5
-  dashPower: 15
+  dashPower: 40
+  dashAmount: 0.15
 --- !u!61 &1731923246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -693,6 +696,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3408401, y: 1.1202775}
   m_EdgeRadius: 0
+--- !u!114 &1731923251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731923242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728ab4e8e748fe04da130197ca806692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 5
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMaxHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1774104852
 GameObject:
   m_ObjectHideFlags: 0

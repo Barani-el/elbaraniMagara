@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class HeartsUI : MonoBehaviour
 {
-    public Health target;
+    public PlayerHealthSystem target;
     public Transform container;      // Horizontal/Vertical Layout Group önerilir
     public GameObject heartPrefab;   // Ýçinde Image olan küçük bir prefab
     public Sprite fullHeart;
@@ -17,6 +17,7 @@ public class HeartsUI : MonoBehaviour
         if (!target) return;
         target.OnMaxHealthChanged.AddListener(Rebuild);
         target.OnHealthChanged.AddListener(Refresh);
+
         Rebuild(target.MaxHealth);
         Refresh(target.CurrentHealth, target.MaxHealth);
     }

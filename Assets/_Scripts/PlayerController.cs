@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     InputSystem_Actions characterInput;
     InputHandler inputHandler;
-    Animator animator;
+    [HideInInspector]public Animator animator;
     [Header("Movement Stuff")]
     [SerializeField] float speed;
     [SerializeField] float jumpPower;
@@ -31,9 +31,11 @@ public class PlayerController : MonoBehaviour
     bool isDoubleJumping;
     [SerializeField] bool isJumpable;
     [Header("Dash Stuff")]
+    bool isDashing;
     bool canDash = true;
     [SerializeField] float dashCooldown;
     [SerializeField] float dashPower;
+    [SerializeField] float dashAmount;
     private void Awake()
     {
         if (instance == null)
@@ -51,10 +53,17 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         inputHandler = GetComponent<InputHandler>();
     }
-  
+    private void FixedUpdate()
+    {
+        if (!isDashing)
+        {
+            HandleMovement();
+        }
+ 
+    }
     void Update()
     {
-        HandleMovement();
+       
         GroundCheck();
         AnimationHandler();
 
@@ -116,26 +125,29 @@ public class PlayerController : MonoBehaviour
         Debug.Log("DASH ALTERNATIVE!");
 
         float dir = transform.localScale.x;
-        Vector2 dashForce = new Vector2(dir * dashPower * 100f, 0f); // Force için daha büyük deðer gerekir
 
-        rb.linearVelocity = Vector2.zero; // Önce durdur
-        rb.AddForce(dashForce, ForceMode2D.Impulse);
-
-        Debug.Log($"AddForce ile dash: {dashForce}");
-
+        rb.gravityScale = 0;
+        isDashing = true;
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(new Vector2(dir* dashPower,0), ForceMode2D.Impulse);
+        Debug.Log(rb.linearVelocityY);
+        
+        rb.gravityScale = 1;
         canDash = false;
+
+        Invoke(nameof(StopDashing), dashAmount);
         Invoke(nameof(ResetDash), dashCooldown);
     }
 
+    void StopDashing()
+    {
+        rb.linearVelocity = Vector2.zero;
+        isDashing = false;
+    }
     void ResetDash()
     {
-        Debug.Log("=== RESET DASH ÇAÐRILDI ===");
-        Debug.Log($"canDash deðiþmeden önce: {canDash}");
-
-        canDash = true;
-
-        Debug.Log($"canDash deðiþtikten sonra: {canDash}");
-        Debug.Log("Dash tekrar kullanýlabilir!");
+        canDash = true;  
+       
     }
 
 
