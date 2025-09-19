@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 524cba38e907c7048a813befd27671b1
+guid: e00777009f587314c9079aca4c4e95da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6613489505977495755
-    second: Fall-3_0
+      213: -6639367566207397286
+    second: Enemy_Walk-5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fall-3_0
+      name: Enemy_Walk-5_0
       rect:
         serializedVersion: 2
-        x: 135
+        x: 96
         y: 0
-        width: 317
-        height: 331
+        width: 410
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53f0076855a2834a0800000000000000
-      internalID: -6613489505977495755
+      spriteID: a5255fa106a3cd3a0800000000000000
+      internalID: -6639367566207397286
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fall-3_0: -6613489505977495755
+      Enemy_Walk-5_0: -6639367566207397286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
