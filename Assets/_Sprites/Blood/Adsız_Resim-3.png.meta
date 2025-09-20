@@ -1,0 +1,1326 @@
+fileFormatVersion: 2
+guid: 3fcca338ca15a08409e68f9e3cf321b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2816430516445709704
+    second: "Ads\u0131z_Resim-3_0"
+  - first:
+      213: 8636397723000464006
+    second: "Ads\u0131z_Resim-3_1"
+  - first:
+      213: -6089017641139495666
+    second: "Ads\u0131z_Resim-3_2"
+  - first:
+      213: 6146702765452895657
+    second: "Ads\u0131z_Resim-3_3"
+  - first:
+      213: -7732117188241697026
+    second: "Ads\u0131z_Resim-3_4"
+  - first:
+      213: -5602603354477892890
+    second: "Ads\u0131z_Resim-3_5"
+  - first:
+      213: -5457289859919303303
+    second: "Ads\u0131z_Resim-3_6"
+  - first:
+      213: -7711120886025064274
+    second: "Ads\u0131z_Resim-3_7"
+  - first:
+      213: 6423590423225192587
+    second: "Ads\u0131z_Resim-3_8"
+  - first:
+      213: 6761334706111010701
+    second: "Ads\u0131z_Resim-3_9"
+  - first:
+      213: 2126703348997723950
+    second: "Ads\u0131z_Resim-3_10"
+  - first:
+      213: -5134639630404123241
+    second: "Ads\u0131z_Resim-3_11"
+  - first:
+      213: -937716654499649679
+    second: "Ads\u0131z_Resim-3_12"
+  - first:
+      213: -5860345603004470311
+    second: "Ads\u0131z_Resim-3_13"
+  - first:
+      213: -1559944055127416610
+    second: "Ads\u0131z_Resim-3_14"
+  - first:
+      213: -540361355782944704
+    second: "Ads\u0131z_Resim-3_15"
+  - first:
+      213: -7833562374280632911
+    second: "Ads\u0131z_Resim-3_16"
+  - first:
+      213: -1826812094201576205
+    second: "Ads\u0131z_Resim-3_17"
+  - first:
+      213: -660642178397395418
+    second: "Ads\u0131z_Resim-3_18"
+  - first:
+      213: 4378078481728734542
+    second: "Ads\u0131z_Resim-3_19"
+  - first:
+      213: -8101812737559620527
+    second: "Ads\u0131z_Resim-3_20"
+  - first:
+      213: 7753264246925449085
+    second: "Ads\u0131z_Resim-3_21"
+  - first:
+      213: -6077676098561381565
+    second: "Ads\u0131z_Resim-3_22"
+  - first:
+      213: 1819706165539901511
+    second: "Ads\u0131z_Resim-3_23"
+  - first:
+      213: -7997566820178649834
+    second: "Ads\u0131z_Resim-3_24"
+  - first:
+      213: -3669143880841505982
+    second: "Ads\u0131z_Resim-3_25"
+  - first:
+      213: -1070967870976090619
+    second: "Ads\u0131z_Resim-3_26"
+  - first:
+      213: -4616902190735463365
+    second: "Ads\u0131z_Resim-3_27"
+  - first:
+      213: 1029229746856836644
+    second: "Ads\u0131z_Resim-3_28"
+  - first:
+      213: 5364281469326602164
+    second: "Ads\u0131z_Resim-3_29"
+  - first:
+      213: -1731845441348694513
+    second: "Ads\u0131z_Resim-3_30"
+  - first:
+      213: -888265882527227355
+    second: "Ads\u0131z_Resim-3_31"
+  - first:
+      213: 531729621603798051
+    second: "Ads\u0131z_Resim-3_32"
+  - first:
+      213: -1342597867649976679
+    second: "Ads\u0131z_Resim-3_33"
+  - first:
+      213: 4800738368725732525
+    second: "Ads\u0131z_Resim-3_34"
+  - first:
+      213: -3512940666536098899
+    second: "Ads\u0131z_Resim-3_35"
+  - first:
+      213: 3126936873611550344
+    second: "Ads\u0131z_Resim-3_36"
+  - first:
+      213: 4330548631786874916
+    second: "Ads\u0131z_Resim-3_37"
+  - first:
+      213: -1647857628249422259
+    second: "Ads\u0131z_Resim-3_38"
+  - first:
+      213: 7262433216505731321
+    second: "Ads\u0131z_Resim-3_39"
+  - first:
+      213: -4170312752512920112
+    second: "Ads\u0131z_Resim-3_40"
+  - first:
+      213: 3383243105620130725
+    second: "Ads\u0131z_Resim-3_41"
+  - first:
+      213: -1550793940134335448
+    second: "Ads\u0131z_Resim-3_42"
+  - first:
+      213: -8573148803951109234
+    second: "Ads\u0131z_Resim-3_43"
+  - first:
+      213: 3334738726781387500
+    second: "Ads\u0131z_Resim-3_44"
+  - first:
+      213: 141190985267408927
+    second: "Ads\u0131z_Resim-3_45"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_0"
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 232
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87afeac0e570ae8d0800000000000000
+      internalID: -2816430516445709704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_1"
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 229
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6826f62b8f5aad770800000000000000
+      internalID: 8636397723000464006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_2"
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 215
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d1bc467b67f7ba0800000000000000
+      internalID: -6089017641139495666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_3"
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 196
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a52bba39997d4550800000000000000
+      internalID: 6146702765452895657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_4"
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 195
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef65921426002b490800000000000000
+      internalID: -7732117188241697026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_5"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 197
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eaeee6deed8f32b0800000000000000
+      internalID: -5602603354477892890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_6"
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 200
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d2b2f49cfc344b0800000000000000
+      internalID: -5457289859919303303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_7"
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 206
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea07160d8689cf490800000000000000
+      internalID: -7711120886025064274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_8"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 420
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8050fec47d252950800000000000000
+      internalID: 6423590423225192587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_9"
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 185
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d875445971615dd50800000000000000
+      internalID: 6761334706111010701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_10"
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 182
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2794ab9d61938d10800000000000000
+      internalID: 2126703348997723950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_11"
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 179
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7958e1ce5781eb8b0800000000000000
+      internalID: -5134639630404123241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_12"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 189
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177a494cbaf8cf2f0800000000000000
+      internalID: -937716654499649679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_13"
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 182
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db65e739bedbaea0800000000000000
+      internalID: -5860345603004470311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_14"
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 190
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0e5a49527f95ae0800000000000000
+      internalID: -1559944055127416610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_15"
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 175
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048853ab5304088f0800000000000000
+      internalID: -540361355782944704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_16"
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 173
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5232b4688994390800000000000000
+      internalID: -7833562374280632911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_17"
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 169
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f44ab5441cd5a6e0800000000000000
+      internalID: -1826812094201576205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_18"
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 151
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626abf0607de4d6f0800000000000000
+      internalID: -660642178397395418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_19"
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 154
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45093ede2f02cc30800000000000000
+      internalID: 4378078481728734542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_20"
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 157
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154160d8d34909f80800000000000000
+      internalID: -8101812737559620527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_21"
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 144
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d775ab701c0299b60800000000000000
+      internalID: 7753264246925449085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_22"
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 126
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bed5d0ac1c7aba0800000000000000
+      internalID: -6077676098561381565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_23"
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 108
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7401898cd15e04910800000000000000
+      internalID: 1819706165539901511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_24"
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 116
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d1dc7995fe20190800000000000000
+      internalID: -7997566820178649834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_25"
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 93
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243d4a09415941dc0800000000000000
+      internalID: -3669143880841505982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_26"
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 102
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e1d9445682321f0800000000000000
+      internalID: -1070967870976090619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_27"
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 93
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c6d7e3be77defb0800000000000000
+      internalID: -4616902190735463365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_28"
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 87
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ebaad600f884e00800000000000000
+      internalID: 1029229746856836644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_29"
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 74
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf2c6e3391c17a40800000000000000
+      internalID: 5364281469326602164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_30"
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 71
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e088e2fbf37f7e0800000000000000
+      internalID: -1731845441348694513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_31"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 76
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522add5d2ee3ca3f0800000000000000
+      internalID: -888265882527227355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_32"
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 76
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c4f3c0645116700800000000000000
+      internalID: 531729621603798051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_33"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 59
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996b68e4a522e5de0800000000000000
+      internalID: -1342597867649976679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_34"
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 52
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac4c776c16af9240800000000000000
+      internalID: 4800738368725732525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_35"
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 45
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3871e73178f3fc0800000000000000
+      internalID: -3512940666536098899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_36"
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 33
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88edfa2f48c156b20800000000000000
+      internalID: 3126936873611550344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_37"
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428e5305903391c30800000000000000
+      internalID: 4330548631786874916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_38"
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 35
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4686c3c732a129e0800000000000000
+      internalID: -1647857628249422259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_39"
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 21
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f852da488859c460800000000000000
+      internalID: 7262433216505731321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_40"
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 23
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d59f2895a21026c0800000000000000
+      internalID: -4170312752512920112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_41"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 21
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abf64beda1b3fe20800000000000000
+      internalID: 3383243105620130725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_42"
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 5
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ce67eb0297a7ae0800000000000000
+      internalID: -1550793940134335448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_43"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bdde5d59e060980800000000000000
+      internalID: -8573148803951109234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_44"
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 0
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce20b8c243f574e20800000000000000
+      internalID: 3334738726781387500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u0131z_Resim-3_45"
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 8
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10f95af37c95f100800000000000000
+      internalID: 141190985267408927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Ads\u0131z_Resim-3_0": -2816430516445709704
+      "Ads\u0131z_Resim-3_1": 8636397723000464006
+      "Ads\u0131z_Resim-3_10": 2126703348997723950
+      "Ads\u0131z_Resim-3_11": -5134639630404123241
+      "Ads\u0131z_Resim-3_12": -937716654499649679
+      "Ads\u0131z_Resim-3_13": -5860345603004470311
+      "Ads\u0131z_Resim-3_14": -1559944055127416610
+      "Ads\u0131z_Resim-3_15": -540361355782944704
+      "Ads\u0131z_Resim-3_16": -7833562374280632911
+      "Ads\u0131z_Resim-3_17": -1826812094201576205
+      "Ads\u0131z_Resim-3_18": -660642178397395418
+      "Ads\u0131z_Resim-3_19": 4378078481728734542
+      "Ads\u0131z_Resim-3_2": -6089017641139495666
+      "Ads\u0131z_Resim-3_20": -8101812737559620527
+      "Ads\u0131z_Resim-3_21": 7753264246925449085
+      "Ads\u0131z_Resim-3_22": -6077676098561381565
+      "Ads\u0131z_Resim-3_23": 1819706165539901511
+      "Ads\u0131z_Resim-3_24": -7997566820178649834
+      "Ads\u0131z_Resim-3_25": -3669143880841505982
+      "Ads\u0131z_Resim-3_26": -1070967870976090619
+      "Ads\u0131z_Resim-3_27": -4616902190735463365
+      "Ads\u0131z_Resim-3_28": 1029229746856836644
+      "Ads\u0131z_Resim-3_29": 5364281469326602164
+      "Ads\u0131z_Resim-3_3": 6146702765452895657
+      "Ads\u0131z_Resim-3_30": -1731845441348694513
+      "Ads\u0131z_Resim-3_31": -888265882527227355
+      "Ads\u0131z_Resim-3_32": 531729621603798051
+      "Ads\u0131z_Resim-3_33": -1342597867649976679
+      "Ads\u0131z_Resim-3_34": 4800738368725732525
+      "Ads\u0131z_Resim-3_35": -3512940666536098899
+      "Ads\u0131z_Resim-3_36": 3126936873611550344
+      "Ads\u0131z_Resim-3_37": 4330548631786874916
+      "Ads\u0131z_Resim-3_38": -1647857628249422259
+      "Ads\u0131z_Resim-3_39": 7262433216505731321
+      "Ads\u0131z_Resim-3_4": -7732117188241697026
+      "Ads\u0131z_Resim-3_40": -4170312752512920112
+      "Ads\u0131z_Resim-3_41": 3383243105620130725
+      "Ads\u0131z_Resim-3_42": -1550793940134335448
+      "Ads\u0131z_Resim-3_43": -8573148803951109234
+      "Ads\u0131z_Resim-3_44": 3334738726781387500
+      "Ads\u0131z_Resim-3_45": 141190985267408927
+      "Ads\u0131z_Resim-3_5": -5602603354477892890
+      "Ads\u0131z_Resim-3_6": -5457289859919303303
+      "Ads\u0131z_Resim-3_7": -7711120886025064274
+      "Ads\u0131z_Resim-3_8": 6423590423225192587
+      "Ads\u0131z_Resim-3_9": 6761334706111010701
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
