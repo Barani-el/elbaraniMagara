@@ -12,6 +12,7 @@ public class InputHandler : MonoBehaviour
         playerInput.Player.Enable();
 
         playerInput.Player.Jump.performed += Jump;
+        playerInput.Player.Jump.canceled += ReleaseJump;
         playerInput.Player.Attack.performed += Attack; 
         playerInput.Player.Dash.performed += Dash;
     }
@@ -23,10 +24,19 @@ public class InputHandler : MonoBehaviour
 
     void Jump(InputAction.CallbackContext context)
     {
-        if (context.ReadValueAsButton())
+        if (context.performed)
         {
 
             PlayerController.instance.HandleJump();
+        }
+       
+    }
+    void ReleaseJump(InputAction.CallbackContext context)
+    {
+        if (context.canceled)
+        {
+            Debug.Log("JUMP REALESE CONTEXT");
+            PlayerController.instance.StopJumping();
         }
     }
 

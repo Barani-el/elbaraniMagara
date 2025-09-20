@@ -113,8 +113,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (!isGrounded) // Havadaki attack
         {
-            isAttacking = true;
-            animator.SetInteger("airState", 4);
+            if (time >= mintimer)
+            {
+                isAttacking = true;
+                animator.SetInteger("airState", 4);
+            }
+          
         }
     }
   
@@ -182,6 +186,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void StopJumping()
+    {
+        if (rb.linearVelocity.y >0)
+        {
+            Debug.Log("JUMP REALESE");
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y*0.5f);
+        }
+    }
     public void HandleRotation()
     {
        
