@@ -4,38 +4,29 @@ using UnityEngine.UI;
 
 public class HeartsUI : MonoBehaviour
 {
-    public PlayerHealthSystem target;
-    public Transform container;      // Horizontal/Vertical Layout Group önerilir
-    public GameObject heartPrefab;   // Ýçinde Image olan küçük bir prefab
-    public Sprite fullHeart;
-    public Sprite emptyHeart;
+    [SerializeField] private Image heartPrefab; // UI > Image prefab
+    [SerializeField] private Sprite fullHeart;  // dolu kalp sprite
+    [SerializeField] private Sprite emptyHeart; // boþ kalp sprite
 
-    readonly List<Image> hearts = new();
-
-  
-    public void Rebuild(int max)
+    private List<Image> hearts = new List<Image>();
+    [SerializeField] Transform heartPos;
+    public void BuildHearts(int maxHealth)
     {
-        for (int i = hearts.Count - 1; i >= 0; i--)
+        for (int i = 0; i < maxHealth; i++)
         {
-            if (hearts[i]) Destroy(hearts[i].gameObject);
-        }
-        hearts.Clear();
-
-        for (int i = 0; i < max; i++)
-        {
-            var go = Instantiate(heartPrefab, container);
-            var img = go.GetComponent<Image>();
-            hearts.Add(img);
+            Image newHeart=Instantiate(heartPrefab, transform);
+            hearts.Add(newHeart);
         }
     }
 
-    public void Refresh(int current, int max)
+    public void RefreshHearts(int currentHealth, int maxHealth)
     {
-        if (hearts.Count != max) Rebuild(max);
-        for (int i = 0; i < hearts.Count; i++)
+        for (int i = 0; i < maxHealth; i++)
         {
-            hearts[i].sprite = i < current ? fullHeart : emptyHeart;
-            hearts[i].SetNativeSize();
+            if (i < currentHealth)
+                hearts[i].sprite = fullHeart;
+            else
+                hearts[i].sprite = emptyHeart;
         }
     }
 }

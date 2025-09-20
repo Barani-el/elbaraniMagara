@@ -6,7 +6,7 @@ public class EnemyAI : MonoBehaviour
     [Header("Idle seçimi (0 veya 1)")]
     [Range(0, 1)] public int idleVariant = 0;
     public Transform player;
-    Animator animator;
+    public Animator animator;
     Rigidbody2D rb;
 
     [Header("Hareket & Algı")]
@@ -27,6 +27,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] GameObject helmet;
     [SerializeField] Transform headLevel;
+    bool isDead;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -136,6 +137,8 @@ public class EnemyAI : MonoBehaviour
     }
     public void HelmetOff()
     {
+        if (isDead) return;
+        isDead = true;
         GameObject helmet_ = Instantiate(helmet, headLevel.position, Quaternion.identity);
         float backDir = facingRight ? -1f : 1f;
         Vector2 launcDir = new Vector2(backDir,Random.Range(0.8f,1.2f)).normalized;

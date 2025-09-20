@@ -21,6 +21,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     }
     public void TakeDamage(int damage)
     {
+        enemyAI.animator.SetTrigger("takeDamage");
         currentHealth -=damage;
         Debug.Log("Damage Taken - Enemy");
         if (currentHealth <= 0)

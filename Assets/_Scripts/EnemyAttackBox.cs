@@ -9,9 +9,9 @@ public class EnemyAttackBox : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.layer == hitLayer)
+        if (collision.gameObject.CompareTag("Player") )
         {
-            Debug.Log("ENEMY!");
+            Debug.Log("PLAYER!");
             var d = collision.GetComponent<IDamageable>();
             if (d != null)
             {
