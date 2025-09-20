@@ -3,28 +3,51 @@ using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
-    [Min(1)] public int maxHealth = 3;
-    public int Current { get; private set; }
+    EnemyAI enemyAI;
+    Animator animator;
+    Rigidbody2D rb;
+    [Min(1)][SerializeField] int maxHealth;
+    [SerializeField] int currentHealth;
+    bool isDead;
+    [SerializeField] BoxCollider2D[] colliders;
 
-    public UnityEvent OnDeath;
-
-    bool dead;
-
-    void Awake() => Current = maxHealth;
-
-    public void TakeDamage(int damageAmount)
+ 
+    private void Awake()
     {
-        if (dead || damageAmount <= 0) return;
-        Current = Mathf.Max(0, Current - damageAmount);
-        if (Current == 0) Die();
+        animator = GetComponent<Animator>();  
+        rb = GetComponent<Rigidbody2D>();
+        enemyAI = GetComponent<EnemyAI>();
+        currentHealth = maxHealth;
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHealth -=damage;
+        Debug.Log("Damage Taken - Enemy");
+        if (currentHealth <= 0)
+        {
+            Dead();
+        }
     }
 
-    void Die()
+    public void Dead()
     {
-        if (dead) return;
-        dead = true;
-        OnDeath?.Invoke();
+        enemyAI.enabled = false;
+        isDead = true;
+        
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            colliders[i].enabled = false;
+        }
+        animator.SetBool("isDead", isDead);
+
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.linearVelocity = Vector2.zero;
+        
     }
 
-    public bool IsDead() => dead;
+
+    private void Update()
+    {
+       currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);    
+    }
 }

@@ -12,27 +12,39 @@ public class EnemyAI : MonoBehaviour
     [Header("Hareket & Algı")]
     public float moveSpeed = 2.2f;         
     public float detectRange = 8f;              
-    public float attackRange = 1.4f;            
-    public float attackCooldown = 0.9f;         
-    public float attackLockDuration = 0.5f;
-    float attackTimer;
-
+    public float attackRange = 1.4f;
+    public float attackCooldown;        
+    public float attackTimer;
+    [SerializeField] GameObject attackBox;
     bool facingRight = true;
-    bool isAttacking = false;
-    //[SerializeField] float attackCooldown;
-    
-    bool isChasing;
+    [SerializeField] bool isAttacking = false;
+    [SerializeField] bool isChasing;
+    public bool onAttack;
+
+
+    [SerializeField] float distance;
+
+
+    [SerializeField] GameObject helmet;
+    [SerializeField] Transform headLevel;
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player").transform;
+    }
+    private void Start()
+    {
+        animator.SetInteger("idleVariant", idleVariant);
     }
 
     private void FixedUpdate()
     {
-        float distance = Vector2.Distance(transform.position, player.position);
+        animator.SetBool("onAttack", isAttacking);
 
-        if (distance < detectRange && distance >attackRange)
+        distance = Vector2.Distance(transform.position, player.position);
+        
+        if (distance < detectRange && distance >attackRange && !onAttack)
         {
             isChasing = true;
             isAttacking = false;
@@ -41,6 +53,7 @@ public class EnemyAI : MonoBehaviour
         {
             isChasing = false;
             isAttacking = true;
+
         }
         else
         {
@@ -54,15 +67,25 @@ public class EnemyAI : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
-            if (attackTimer >= attackCooldown)
+            if (attackTimer >= attackCooldown && !onAttack)
             {
-                int attackState = Random.Range(0, 2);
-                animator.SetInteger("attackState", attackState);
-
+                rb.linearVelocity = Vector2.zero;
+                onAttack = true;
+                animator.SetBool("onAttack", onAttack);
+                int attackState = Random.Range(2, 4);
+                Debug.Log(attackState);
+                animator.SetInteger("state", attackState);
+                
+            }
+            else
+            {
+                
+                
+                
             }
         }
 
-        else if (isChasing)
+        else if (isChasing )
         {
             animator.SetInteger("state", 1);
             float dir = Mathf.Sign(player.position.x - transform.position.x);
@@ -76,6 +99,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OpenDamageBox()
+    {
+        attackBox.SetActive(true);
+    }
+    public void EndAttack()
+    {
+        
+        attackBox.SetActive(false);
+        onAttack = false;
+
+        attackTimer = 0;
+        animator.SetInteger("state", idleVariant);
+    }
     private void Update()
     {
 
@@ -98,5 +134,13 @@ public class EnemyAI : MonoBehaviour
         s.x *= -1f;
         transform.localScale = s;
     }
-  
+    public void HelmetOff()
+    {
+        GameObject helmet_ = Instantiate(helmet, headLevel.position, Quaternion.identity);
+        float backDir = facingRight ? -1f : 1f;
+        Vector2 launcDir = new Vector2(backDir,Random.Range(0.8f,1.2f)).normalized;
+        helmet_.GetComponent<Rigidbody2D>().AddForce(launcDir * Random.Range(5,8),ForceMode2D.Impulse);
+        helmet_.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-30f,30f),ForceMode2D.Impulse);
+    }
+
 }

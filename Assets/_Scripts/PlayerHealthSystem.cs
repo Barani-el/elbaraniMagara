@@ -3,49 +3,49 @@ using UnityEngine.Events;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
-    [Min(1)] public int MaxHealth = 3;
-    public int CurrentHealth { get; private set; }
+    [SerializeField] HeartsUI heartUI;
+    [Min(1)] public int maxHealth = 3;
+    public int currentHealth;
 
-    [HideInInspector] public UnityEvent<int, int> OnHealthChanged;   // (current, max)
-    [HideInInspector] public UnityEvent<int> OnMaxHealthChanged;    // (max)
-    [HideInInspector] public UnityEvent OnDeath;
-
-    bool IsDead => CurrentHealth <= 0;
+    
+    [SerializeField] ParticleSystem damageParticle;
+  
 
     void Awake()
     {
-        CurrentHealth = Mathf.Clamp(CurrentHealth == 0 ? MaxHealth : CurrentHealth, 0, MaxHealth);
-        OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
-        OnMaxHealthChanged?.Invoke(MaxHealth);
+       currentHealth = maxHealth;
     }
 
     public void TakeDamage(int amount)
     {
-        if (amount <= 0 || IsDead) return;
-        CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
-        OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
-        if (CurrentHealth == 0) Die();
+        damageParticle.Play();
+        currentHealth -= amount;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void Heal(int amount)
     {
-        if (amount <= 0 || IsDead) return;
-        CurrentHealth = Mathf.Min(MaxHealth, CurrentHealth + amount);
-        OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
+        if (currentHealth < maxHealth)
+        {
+            currentHealth += amount;
+        }
+        
     }
 
     public void IncreaseMaxHealth(int amount, bool fillNewHearts = true)
     {
-        if (amount <= 0) return;
-        MaxHealth += amount;
-        if (fillNewHearts) CurrentHealth = MaxHealth;
-        else CurrentHealth = Mathf.Min(CurrentHealth, MaxHealth);
-        OnMaxHealthChanged?.Invoke(MaxHealth);
-        OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
+        maxHealth +=amount;
+        heartUI.Rebuild(maxHealth);
+        heartUI.Refresh(currentHealth,maxHealth);
     }
 
     public void Die()
     {
-        if (IsDead) OnDeath?.Invoke();
+        PlayerController.instance.animator.SetBool("isDead", true);
     }
+
+    
 }

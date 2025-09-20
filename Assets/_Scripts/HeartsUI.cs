@@ -12,24 +12,8 @@ public class HeartsUI : MonoBehaviour
 
     readonly List<Image> hearts = new();
 
-    void OnEnable()
-    {
-        if (!target) return;
-        target.OnMaxHealthChanged.AddListener(Rebuild);
-        target.OnHealthChanged.AddListener(Refresh);
-
-        Rebuild(target.MaxHealth);
-        Refresh(target.CurrentHealth, target.MaxHealth);
-    }
-
-    void OnDisable()
-    {
-        if (!target) return;
-        target.OnMaxHealthChanged.RemoveListener(Rebuild);
-        target.OnHealthChanged.RemoveListener(Refresh);
-    }
-
-    void Rebuild(int max)
+  
+    public void Rebuild(int max)
     {
         for (int i = hearts.Count - 1; i >= 0; i--)
         {
@@ -45,7 +29,7 @@ public class HeartsUI : MonoBehaviour
         }
     }
 
-    void Refresh(int current, int max)
+    public void Refresh(int current, int max)
     {
         if (hearts.Count != max) Rebuild(max);
         for (int i = 0; i < hearts.Count; i++)

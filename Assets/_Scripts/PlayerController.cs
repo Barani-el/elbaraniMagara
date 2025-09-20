@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dashCooldown;
     [SerializeField] float dashPower;
     [SerializeField] float dashAmount;
+    [SerializeField] ParticleSystem jumpParticle, dashParticle;
     private void Awake()
     {
         if (instance == null)
@@ -136,13 +137,15 @@ public class PlayerController : MonoBehaviour
 
         float dir = transform.localScale.x;
 
+        float gravity = rb.gravityScale;
         rb.gravityScale = 0;
         isDashing = true;
         rb.linearVelocity = Vector2.zero;
+        dashParticle.Play(rb);
         rb.AddForce(new Vector2(dir* dashPower,0), ForceMode2D.Impulse);
         Debug.Log(rb.linearVelocityY);
         
-        rb.gravityScale = 1;
+        rb.gravityScale = gravity;
         canDash = false;
 
         Invoke(nameof(StopDashing), dashAmount);
@@ -165,13 +168,13 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded)
         {
-         
+            jumpParticle.Play();
             rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             isDoubleJumping = false;
         }
         else if (isDoubleObtained && isJumpable )
         {
-           
+            jumpParticle.Play();
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
             rb.AddForce(Vector2.up * jumpPower * 4/5f, ForceMode2D.Impulse);
             isJumpable = false;
