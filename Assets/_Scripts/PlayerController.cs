@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int attackIndex = 0;
     [SerializeField] float mintimer,maxtimer;
     [SerializeField] float time;
+    [SerializeField] GameObject[] attackList;
 
     [Header("Jump Variables")]
     public bool isGrounded;
@@ -75,6 +76,15 @@ public class PlayerController : MonoBehaviour
             attackIndex = 0;
             EndAttack();
         }
+    }
+
+    public void GiveDamage(int attackIndex)
+    {
+        attackList[attackIndex].SetActive(true);
+    }
+    public void CloseDamageBox(int attackIndex)
+    {
+        attackList[attackIndex].SetActive(false);
     }
     public void Attack()
     {
@@ -231,6 +241,8 @@ public class PlayerController : MonoBehaviour
                 animator.SetInteger("airState", 3); // Fall
         }
     }
+
+
 
 
 }
