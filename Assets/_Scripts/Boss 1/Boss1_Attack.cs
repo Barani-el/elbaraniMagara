@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Boss1_Attack : MonoBehaviour, IDamageable
@@ -29,9 +30,14 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
-
+    private void FixedUpdate()
+    {
+        UpdateStats();
+    }
     void Update()
     {
+       
+
         if (isTakingDamage) return; // damage animasyonu sýrasýnda bekle
 
         stateTimer -= Time.deltaTime;
@@ -107,13 +113,8 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
         Quaternion rot = Quaternion.LookRotation(Vector3.forward, dir);
         Instantiate(electric, attackOrigins[i].position, rot);
     }
-
-    void UpdateStats()
-    {
-        if (attackIndex % 5 == 0)
-            attackAmount++;
-    }
-
+   
+   
     public void TakeDamage(int damageAmount)
     {
         animator.SetTrigger("takeDamage");
@@ -133,6 +134,12 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
     public void Dead()
     {
         animator.SetBool("isDead", true);
+    }
+    void UpdateStats()
+    {
+        attackAmount = Mathf.Clamp(attackAmount,3 ,attackOrigins.Length);
+        if (attackIndex % 5 == 0)
+            attackAmount++;
     }
 
     public void DeadBloodEffect()

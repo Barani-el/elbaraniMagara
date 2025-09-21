@@ -21,5 +21,9 @@ public class Electric : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    public void CloseHitBox()
+    {
+        boxCollider.enabled = false;
+    }
 
 }

@@ -67,5 +67,15 @@ public class InputHandler : MonoBehaviour
             PlayerController.instance.Interact();
         }
     }
+
+    public void SwitchToMenu()
+    {
+
+    }
+
+    public void SwitchToPlayer()
+    {
+
+    }
 }
 

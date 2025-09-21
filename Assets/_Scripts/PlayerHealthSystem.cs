@@ -29,6 +29,7 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
         PlayerController.instance.animator.SetTrigger("takeDamage");
 
         currentHealth -= amount;
+        SaveManager.instance.UpdateHealth();
         if (currentHealth < 0) currentHealth = 0;
 
         heartsUI.RefreshHearts(currentHealth, maxHealth);
@@ -79,11 +80,12 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
     {
         if (collision.gameObject.CompareTag("hit"))
         {
-            Debug.Log(currentHealth);
+            PlayerSoundManager.instance.TakeDamage();
             TakeDamage(1);
         }
         if (collision.gameObject.CompareTag("spike"))
         {
+            PlayerSoundManager.instance.TakeDamage();
             TakeDamage(1);
             if(currentHealth > 0) StartCoroutine(LittleDie());
 
@@ -99,9 +101,15 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
         //Karaker kontrolcüsü açýlacak burada
         transform.position = spawnpoint;
 
-        if (spawnHealth <= 0) currentHealth = maxHealth;
+        if (spawnHealth <= 0)
+        {
+            Debug.Log("can yenileniyor");
+            currentHealth = maxHealth;
+            heartsUI.RefreshHearts(currentHealth, maxHealth);
+           
+        }
         else currentHealth = spawnHealth;
-
+     
         screenAnimator.SetTrigger("Open");
     }
 }

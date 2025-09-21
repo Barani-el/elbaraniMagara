@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
             
             if (time >= mintimer  && attackIndex == 0)
             {
-                
+                PlayerSoundManager.instance.Attack();
                 isAttacking = true;
                 animator.SetBool("isAttackEnd", !isAttacking);
                 animator.SetInteger("groundState", 2);
@@ -107,6 +107,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (time >= mintimer && time <= maxtimer && attackIndex == 1) 
             {
+                PlayerSoundManager.instance.Attack();
                 isAttacking = true;
                 animator.SetBool("isAttackEnd", !isAttacking);
                 animator.SetInteger("groundState", 3);
@@ -118,6 +119,7 @@ public class PlayerController : MonoBehaviour
         {
             if (time >= mintimer)
             {
+                PlayerSoundManager.instance.Attack();
                 isAttacking = true;
                 animator.SetInteger("airState", 4);
             }
@@ -149,6 +151,7 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         rb.linearVelocity = Vector2.zero;
         dashParticle.Play(rb);
+        PlayerSoundManager.instance.Dash();
         rb.AddForce(new Vector2(dir* dashPower,0), ForceMode2D.Impulse);
         Debug.Log(rb.linearVelocityY);
         
@@ -176,12 +179,14 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             jumpParticle.Play();
+            PlayerSoundManager.instance.Jump(0);
             rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             isDoubleJumping = false;
         }
-        else if (isDoubleObtained && isJumpable )
+        else if (isDoubleObtained && isJumpable)
         {
             jumpParticle.Play();
+            PlayerSoundManager.instance.Jump(1);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
             rb.AddForce(Vector2.up * jumpPower * 4/5f, ForceMode2D.Impulse);
             isJumpable = false;

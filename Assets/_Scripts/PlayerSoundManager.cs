@@ -4,6 +4,7 @@ public class PlayerSoundManager : MonoBehaviour
 {
     public static PlayerSoundManager instance;
     float basePitch;
+    float baseVol;
     [SerializeField] AudioSource audioSource,walkAudioSource;
     [Header("Walk")]
     [SerializeField] AudioClip walk;
@@ -29,11 +30,14 @@ public class PlayerSoundManager : MonoBehaviour
         else Destroy(gameObject);
        
         basePitch = audioSource.pitch;
+
     }
     public void Attack()
     {
+        
         audioSource.pitch = Random.Range(attackMinPitch,attackMaxPitch);
         audioSource.PlayOneShot(attack);
+        
     }
 
     public void Jump(int jumpCount)

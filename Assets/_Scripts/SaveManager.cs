@@ -32,6 +32,11 @@ public class SaveManager : MonoBehaviour
     {
         return lastSavedPoint;
     }
+
+    public void UpdateHealth()
+    {
+        lastCurrentHealth = PlayerHealthSystem.instance.currentHealth;
+    }
     public int GetCurrentHealth()
     {
         return lastCurrentHealth; 
