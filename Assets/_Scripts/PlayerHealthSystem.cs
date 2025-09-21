@@ -11,6 +11,8 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
     [SerializeField] ParticleSystem damageParticle;
     [SerializeField] HeartsUI heartsUI;
     [SerializeField] Animator screenAnimator;
+
+    bool canTakeDamage = true;
     void Awake()
     {
         if (instance == null)
@@ -25,6 +27,8 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount)
     {
+        if (!canTakeDamage) return;
+        StartCoroutine(TakeDamageCoolDown());
         damageParticle.Play();
         PlayerController.instance.animator.SetTrigger("takeDamage");
 
@@ -39,7 +43,12 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
             StartCoroutine(Die());
         }
     }
-
+    IEnumerator TakeDamageCoolDown()
+    {
+        canTakeDamage = false;
+        yield return new WaitForSeconds(0.1f);
+        canTakeDamage = true;
+    }
     public void Heal(int amount)
     {
         if (currentHealth < maxHealth)

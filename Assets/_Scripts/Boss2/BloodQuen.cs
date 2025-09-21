@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class BloodQuen : MonoBehaviour
+public class BloodQuen : MonoBehaviour,IDamageable
 {
     Animator animator;
     Transform Player;
@@ -14,6 +14,8 @@ public class BloodQuen : MonoBehaviour
     [SerializeField] int bloodAmount;
     int attackIndex;
     [SerializeField] Transform floorLevel;
+
+    [SerializeField] BoxCollider2D[] colliders;
 
     private void Awake()
     {
@@ -35,7 +37,7 @@ public class BloodQuen : MonoBehaviour
     {
         animator.SetTrigger("Attack");
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
         SpawnBlood();
         attackIndex++;
         UpdateStats();
@@ -53,17 +55,31 @@ public class BloodQuen : MonoBehaviour
         }
         
     }
-    public void Dead()
-    {
-        animator.SetBool("isDead", true);
-    }
+   
     void UpdateStats()
     {
         bloodAmount = Mathf.Clamp(bloodAmount, 3, 6);
         if (attackIndex % 5 == 0)
             bloodAmount++;
     }
-
+    public void TakeDamage(int damageCount)
+    {
+        if (currentHealth <= 0) return;
+        animator.SetTrigger("TakeDamage");
+        currentHealth -= bloodAmount;
+      
+        if (currentHealth <= 0)
+            Dead();
+    }
+    public void Dead()
+    {
+        animator.SetTrigger("Die");
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            colliders[i].enabled = false;
+        }
+        StopAllCoroutines();
+    }
     public void DeadBloodEffect()
     {
         deadBlood.Play();
@@ -76,6 +92,9 @@ public class BloodQuen : MonoBehaviour
 
     public void Destroy()
     {
-        Destroy(gameObject);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            colliders[i].enabled = false;
+        }
     }
 }
