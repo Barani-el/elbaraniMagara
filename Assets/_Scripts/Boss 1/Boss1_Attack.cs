@@ -132,15 +132,16 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
         isTakingDamage = false;
     }
 
-    public void Dead()
-    {
-        animator.SetBool("isDead", true);
-    }
+ 
     void UpdateStats()
     {
         attackAmount = Mathf.Clamp(attackAmount,3 ,attackOrigins.Length);
         if (attackIndex % 5 == 0)
             attackAmount++;
+    }
+    public void Dead()
+    {
+        animator.SetBool("isDead", true);
     }
 
     public void DeadBloodEffect()
