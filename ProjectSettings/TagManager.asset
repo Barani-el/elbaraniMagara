@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Damagable
   - hit
+  - Interactable
   layers:
   - Default
   - TransparentFX

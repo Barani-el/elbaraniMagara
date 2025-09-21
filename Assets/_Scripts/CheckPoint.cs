@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class CheckPoint : MonoBehaviour
+public class CheckPoint : MonoBehaviour,IInteractable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+   public void Interact()
     {
-        
-    }
+        Debug.Log("Saved!!");
+        if (Vector2.Distance(transform.position, SaveManager.instance.GetSavedPoint()) < 1) return;
+       
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SaveManager.instance.Save(transform.position);
     }
 }

@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dashAmount;
     [SerializeField] ParticleSystem jumpParticle, dashParticle;
 
-    bool canInteract ;
+    public bool canInteract ;
     GameObject interactableObject;
     private void Awake()
     {
@@ -229,8 +229,10 @@ public class PlayerController : MonoBehaviour
 
     public void Interact()
     {
+        Debug.LogWarning("Interact");
         if (!canInteract) return;
-        interactableObject.GetComponent<IInteractable>().Intearct();
+        Debug.LogWarning("Interact DONE");
+        interactableObject.GetComponent<IInteractable>().Interact();
     }
    
     void AnimationHandler()
@@ -271,6 +273,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Interactable"))
         {
+            Debug.LogWarning("Can Save");
             canInteract = true;
             interactableObject = collision.gameObject;
         }

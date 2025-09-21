@@ -60,9 +60,11 @@ public class InputHandler : MonoBehaviour
     }
     void Interact(InputAction.CallbackContext context)
     {
+      
         if (context.performed)
         {
-
+            
+            PlayerController.instance.Interact();
         }
     }
 }
