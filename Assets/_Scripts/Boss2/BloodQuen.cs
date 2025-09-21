@@ -13,6 +13,7 @@ public class BloodQuen : MonoBehaviour
     [SerializeField] float attackDelay;
     [SerializeField] int bloodAmount;
     int attackIndex;
+    [SerializeField] Transform floorLevel;
 
     private void Awake()
     {
@@ -22,33 +23,36 @@ public class BloodQuen : MonoBehaviour
     }
     void Start()
     {
-        Attack();
+        StartCoroutine(Attack());
     }
     void Update()
     {
-        UpdateStats();
+      
        
     }
 
     IEnumerator Attack()
     {
         animator.SetTrigger("Attack");
-        yield return new WaitForSeconds(attackDelay);
+
+        yield return new WaitForSeconds(0.5f);
         SpawnBlood();
+        attackIndex++;
+        UpdateStats();
+        yield return new WaitForSeconds(attackDelay);
+        StartCoroutine(Attack());
+      
     }
 
     void SpawnBlood()
     {
         for (int i = 0; i < bloodAmount; i++)
         {
-            Vector2 targetPos = new Vector2(Random.Range(Player.position.x - 20, Player.position.x + 20), 0);
+            Vector2 targetPos = new Vector2(Random.Range(Player.position.x - 10, Player.position.x + 10), floorLevel.position.y+4);
             Instantiate(blood, targetPos, Quaternion.identity);
         }
-
+        
     }
-
-  
-
     public void Dead()
     {
         animator.SetBool("isDead", true);

@@ -30,10 +30,7 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
-    private void FixedUpdate()
-    {
-        UpdateStats();
-    }
+    
     void Update()
     {
        
@@ -61,7 +58,11 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
                 if (attackIndex < attackAmount )
                     StartPrepare(shortChargeTime);
                 else
+                {
+                    attackIndex++;
+                    UpdateStats();
                     GoIdle();
+                }
                 break;
         }
     }
