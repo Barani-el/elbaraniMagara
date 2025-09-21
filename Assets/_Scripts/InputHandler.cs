@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,7 @@ public class InputHandler : MonoBehaviour
         playerInput.Player.Jump.canceled += ReleaseJump;
         playerInput.Player.Attack.performed += Attack; 
         playerInput.Player.Dash.performed += Dash;
+        playerInput.Player.Interact.performed += Interact;
     }
     public Vector2 GetMovementVector()
     {
@@ -53,6 +55,13 @@ public class InputHandler : MonoBehaviour
         if (context.performed)
         {
             PlayerController.instance.Dash();
+
+        }
+    }
+    void Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
 
         }
     }
