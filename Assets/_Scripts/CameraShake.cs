@@ -5,7 +5,7 @@ public class CameraShake : MonoBehaviour
 {
     public static CameraShake Instance;
 
-    [SerializeField] CinemachineVirtualCamera virtualCamera;
+    [SerializeField] CinemachineCamera virtualCamera;
     CinemachineBasicMultiChannelPerlin noise;
 
     float shakeTimer;
@@ -15,13 +15,14 @@ public class CameraShake : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        noise = GetComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
-    public void Shake(float intensity, float time)
+    public void Shake(float intensity, float freq,float time)
     {
         noise.AmplitudeGain = intensity;
         shakeTimer = time;
+        noise.FrequencyGain = freq;
     }
 
     void Update()

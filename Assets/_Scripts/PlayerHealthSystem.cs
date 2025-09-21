@@ -28,6 +28,7 @@ public class PlayerHealthSystem : MonoBehaviour, IDamageable
     public void TakeDamage(int amount)
     {
         if (!canTakeDamage) return;
+        CameraShake.Instance.Shake(5f,0.2f,0.2f);
         StartCoroutine(TakeDamageCoolDown());
         damageParticle.Play();
         PlayerController.instance.animator.SetTrigger("takeDamage");
