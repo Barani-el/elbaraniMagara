@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 3584133021240701692}
   - component: {fileID: 4796325920966058057}
   - component: {fileID: 64788066134271445}
+  - component: {fileID: 3611903419142595209}
+  - component: {fileID: 1141036237169358356}
+  - component: {fileID: 8141240914671752076}
   m_Layer: 0
   m_Name: npc boat
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +113,259 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &3611903419142595209
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811756274353893491}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 1.0181103, y: 12.314273}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 40, y: 22.5}
+    newSize: {x: 40, y: 22.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 50.762867, y: 28.317759}
+  m_EdgeRadius: 0
+--- !u!114 &1141036237169358356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811756274353893491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b84a2fd501b61b49b638417119ddb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialoguePanel: {fileID: 0}
+  dialogueLines:
+  - speakerName: "Ermi\u015F Yabanc\u0131"
+    text: Naabberr
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: "Senin de mi kafan\u0131 \xE7arp\u0131p kask\u0131 d\xFC\u015F\xFCrd\xFCn
+      ?"
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: "Ya da kask\u0131n bozulmu\u015Ftur"
+  - speakerName: "Kasks\u0131z K\xF6le "
+    text: ....
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: '... ? '
+  - speakerName: "Kasks\u0131z K\xF6le "
+    text: "No entiendo en absoluto lo que est\xE1s diciendo."
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: ......
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: "Ben sana kendi dilimde anlat\u0131cam. Anlay\u0131p anlamamak sana kalm\u0131\u015F"
+  - speakerName: "Kasks\u0131z K\xF6le "
+    text: "Si supiera turco, lo entender\xEDa. En fin, me cuenta que esta es la historia
+      de una compa\xF1\xEDa malvada que esclaviza a todos."
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: "Buralarda en eski benim ama \xE7ok bir \u015Fey bilmem."
+  - speakerName: "Ermi\u015F Kasks\u0131z Yabanc\u0131"
+    text: "Anlad\u0131\u011F\u0131m kadar\u0131yla Beyin denilen bir organ zamanla
+      kafay\u0131 yemi\u015F."
+  - speakerName: "Kasks\u0131z K\xF6le "
+    text: "B\xFCt\xFCn bedeni kendisi i\xE7in zorla \xE7al\u0131\u015Ft\u0131r\u0131yormu\u015F
+      falan. Yersen ! "
+  - speakerName: "Kasks\u0131z K\xF6le "
+    text: "Yok bir de 3 tane kalp var. B\xFCt\xFCn kan\u0131 Beyne pompal\u0131yorlar.
+      \xC7ok kolay inan\u0131yorsunuz olm"
+  - speakerName: "Kasks\u0131z K\xF6le "
+    text: "Bu oyunda gamepad kontrol\xFC de oldu\u011Funu biliyor muydun ?"
+  lineDelay: 2.5
+--- !u!82 &8141240914671752076
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811756274353893491}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1c7c445d4f0f27949bb75527d4139c21, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1c7c445d4f0f27949bb75527d4139c21, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 2
+  MaxDistance: 200
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.028391175
+      value: 1.002243
+      inSlope: -250.10033
+      outSlope: -250.10033
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.033915147
+      value: 0.53808594
+      inSlope: -62.52508
+      outSlope: -62.52508
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.044965
+      value: 0.37322998
+      inSlope: -15.63127
+      outSlope: -15.63127
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.064012945
+      value: 0.29525757
+      inSlope: -3.9078176
+      outSlope: -3.9078176
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.0990647
+      value: 0.24172974
+      inSlope: -0.9769544
+      outSlope: -0.9769544
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.16763471
+      value: 0.18807983
+      inSlope: -0.2442386
+      outSlope: -0.2442386
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.28190944
+      value: 0.123168945
+      inSlope: -0.06105965
+      outSlope: -0.06105965
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5074224
+      value: 0.07727051
+      inSlope: -0.0152649125
+      outSlope: -0.0152649125
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.008486077
+      inSlope: -0.004001602
+      outSlope: -0.004001602
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
     public bool isDoubleObtained;
+    public bool isDashObtained;
     bool isDoubleJumping;
     [SerializeField] bool isJumpable;
     [Header("Dash Stuff")]
@@ -140,6 +141,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Dash()
     {
+        if (!isDashObtained) return;
         if (!canDash) return;
 
         Debug.Log("DASH ALTERNATIVE!");

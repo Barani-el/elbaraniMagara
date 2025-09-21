@@ -24,6 +24,7 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
     int attackIndex;
     bool isTakingDamage;
 
+    [SerializeField] GameObject skillOrb;
     private void Awake()
     {
         Player = GameObject.Find("Player").transform;
@@ -142,6 +143,8 @@ public class Boss1_Attack : MonoBehaviour, IDamageable
     public void Dead()
     {
         animator.SetBool("isDead", true);
+        Instantiate(skillOrb, transform);
+        CameraShake.Instance.Shake(1.5f, 0.2f, 2);
     }
 
     public void DeadBloodEffect()

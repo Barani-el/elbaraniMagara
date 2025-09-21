@@ -73,6 +73,7 @@ public class BloodQuen : MonoBehaviour,IDamageable
     }
     public void Dead()
     {
+        CameraShake.Instance.Shake(1.5f, 0.2f, 2);
         animator.SetTrigger("Die");
         for (int i = 0; i < colliders.Length; i++)
         {
