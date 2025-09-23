@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 5587457219706487240}
+    - target: {fileID: 4310033160087465054, guid: 8e50ade99143ab24b9f508bb87d9b524, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4817322628764909321, guid: 8e50ade99143ab24b9f508bb87d9b524, type: 3}
       propertyPath: m_Enabled
       value: 0
