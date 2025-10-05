@@ -50,10 +50,9 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.Log("asdas");
             Destroy(gameObject);
         }
-
+        DontDestroyOnLoad(gameObject);
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
