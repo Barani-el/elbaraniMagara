@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b8b82e482a4c9ca4685c19d0c6895ff3
+guid: 95656e55cdee7474089c06cafcff0e70
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4426334004188077122
-    second: "g\xF6l_0"
+      213: -6322439777161187612
+    second: Big_Boss_Walk-7_0
+  - first:
+      213: -5214085025343109368
+    second: Big_Boss_Walk-7_1
+  - first:
+      213: 4467517327587437089
+    second: Big_Boss_Walk-7_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 83.333336
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "g\xF6l_0"
+      name: Big_Boss_Walk-7_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 1797
-        height: 712
+        x: 700
+        y: 665
+        width: 76
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24cdcd8335f7d6d30800000000000000
-      internalID: 4426334004188077122
+      spriteID: 4eee188358e2248a0800000000000000
+      internalID: -6322439777161187612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big_Boss_Walk-7_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 349
+        width: 38
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8078dbb7b49d3a7b0800000000000000
+      internalID: -5214085025343109368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big_Boss_Walk-7_2
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 718
+        height: 658
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a60cae65fcffd30800000000000000
+      internalID: 4467517327587437089
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "g\xF6l_0": 4426334004188077122
+      Big_Boss_Walk-7_0: -6322439777161187612
+      Big_Boss_Walk-7_1: -5214085025343109368
+      Big_Boss_Walk-7_2: 4467517327587437089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

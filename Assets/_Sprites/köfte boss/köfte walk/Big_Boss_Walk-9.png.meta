@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b8b82e482a4c9ca4685c19d0c6895ff3
+guid: e0bbd69c09161054f833b6367b51a18d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4426334004188077122
-    second: "g\xF6l_0"
+      213: -5862128225541303518
+    second: Big_Boss_Walk-9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 83.333336
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "g\xF6l_0"
+      name: Big_Boss_Walk-9_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 300
         y: 0
-        width: 1797
-        height: 712
+        width: 715
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24cdcd8335f7d6d30800000000000000
-      internalID: 4426334004188077122
+      spriteID: 223d1d0107985aea0800000000000000
+      internalID: -5862128225541303518
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "g\xF6l_0": 4426334004188077122
+      Big_Boss_Walk-9_0: -5862128225541303518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

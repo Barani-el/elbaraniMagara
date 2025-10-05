@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: b8b82e482a4c9ca4685c19d0c6895ff3
+guid: c5c8e364f03d09641b532f0ab3904d2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4426334004188077122
-    second: "g\xF6l_0"
+      213: 8258246984692454764
+    second: "Ads\u2500\u2592z_Resim-3_0"
+  - first:
+      213: -3452186893678695488
+    second: "Ads\u2500\u2592z_Resim-3_1"
+  - first:
+      213: 2775931953439873671
+    second: "Ads\u2500\u2592z_Resim-3_2"
+  - first:
+      213: -7940108676285157692
+    second: "Ads\u2500\u2592z_Resim-3_3"
+  - first:
+      213: -7783661305951454568
+    second: "Ads\u2500\u2592z_Resim-3_4"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "g\xF6l_0"
+      name: "Ads\u2500\u2592z_Resim-3_0"
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 1797
-        height: 712
+        x: 226
+        y: 3332
+        width: 126
+        height: 493
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24cdcd8335f7d6d30800000000000000
-      internalID: 4426334004188077122
+      spriteID: c65d806e0ef2b9270800000000000000
+      internalID: 8258246984692454764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u2500\u2592z_Resim-3_1"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 2553
+        width: 137
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cba5088f4e5710d0800000000000000
+      internalID: -3452186893678695488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u2500\u2592z_Resim-3_2"
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1546
+        width: 140
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a90757767168620800000000000000
+      internalID: 2775931953439873671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u2500\u2592z_Resim-3_3"
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 808
+        width: 136
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cea6083a311fc190800000000000000
+      internalID: -7940108676285157692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ads\u2500\u2592z_Resim-3_4"
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 33
+        width: 126
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a7fc62841eaf390800000000000000
+      internalID: -7783661305951454568
       vertices: []
       indices: 
       edges: []
@@ -138,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "g\xF6l_0": 4426334004188077122
+      "Ads\u2500\u2592z_Resim-3_0": 8258246984692454764
+      "Ads\u2500\u2592z_Resim-3_1": -3452186893678695488
+      "Ads\u2500\u2592z_Resim-3_2": 2775931953439873671
+      "Ads\u2500\u2592z_Resim-3_3": -7940108676285157692
+      "Ads\u2500\u2592z_Resim-3_4": -7783661305951454568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

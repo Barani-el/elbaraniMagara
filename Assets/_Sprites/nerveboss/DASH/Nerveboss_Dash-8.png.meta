@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b8b82e482a4c9ca4685c19d0c6895ff3
+guid: 159234b3666439b429dbbbf1fb26e090
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4426334004188077122
-    second: "g\xF6l_0"
+      213: 1088050682693887094
+    second: Nerveboss_Dash-8_0
+  - first:
+      213: -3540947331808774496
+    second: Nerveboss_Dash-8_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "g\xF6l_0"
+      name: Nerveboss_Dash-8_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 251
         y: 0
-        width: 1797
-        height: 712
+        width: 442
+        height: 678
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24cdcd8335f7d6d30800000000000000
-      internalID: 4426334004188077122
+      spriteID: 6742797c458891f00800000000000000
+      internalID: 1088050682693887094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nerveboss_Dash-8_1
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 670
+        width: 116
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6bb2799270cdec0800000000000000
+      internalID: -3540947331808774496
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "g\xF6l_0": 4426334004188077122
+      Nerveboss_Dash-8_0: 1088050682693887094
+      Nerveboss_Dash-8_1: -3540947331808774496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
